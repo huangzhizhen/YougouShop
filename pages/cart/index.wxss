@@ -1,0 +1,148 @@
+page {
+  padding-bottom: 90rpx;
+}
+.revice_address_row .address_btn {
+  padding: 20rpx;
+}
+.revice_address_row .address_btn button {
+  width: 60%;
+}
+.revice_address_row .user_info_row {
+  font-size: 30rpx;
+  display: flex;
+  padding: 20rpx;
+}
+.revice_address_row .user_info_row .user_info {
+  flex: 5;
+}
+.revice_address_row .user_info_row .user_phone {
+  flex: 3;
+  text-align: right;
+}
+.cart_content .content_title {
+  font-size: 36rpx;
+  padding: 20rpx;
+  color: var(--themeColor);
+  border-bottom: 1rpx solid #ccc;
+  border-top: 1rpx solid #ccc;
+}
+.cart_content .cart_list .cart_item {
+  display: flex;
+  border-bottom: 1rpx solid #ccc;
+  padding: 10rpx;
+}
+.cart_content .cart_list .cart_item .cart_chk_wrap {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cart_content .cart_list .cart_item .imgwrap {
+  flex: 2;
+}
+.cart_content .cart_list .cart_item .imgwrap image {
+  width: 220rpx;
+  height: 200rpx;
+}
+.cart_content .cart_list .cart_item .content_info {
+  flex: 6;
+  display: flex;
+  margin-left: 20rpx;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.cart_content .cart_list .cart_item .content_info .dsc {
+  font-size: 32rpx;
+  color: #666;
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+.cart_content .cart_list .cart_item .content_info .price_num {
+  display: flex;
+  justify-content: space-between;
+  font-size: 32rpx;
+}
+.cart_content .cart_list .cart_item .content_info .price_num .price {
+  color: var(--themeColor);
+}
+.cart_content .cart_list .cart_item .content_info .price_num .num_wrap {
+  display: flex;
+  font-size: 32rpx;
+  font-weight: 400;
+  margin-right: 43rpx;
+}
+.cart_content .cart_list .cart_item .content_info .price_num .num_wrap .edit_num {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40rpx;
+  height: 40rpx;
+  border: 1rpx solid black;
+}
+.cart_content .cart_list .cart_item .content_info .price_num .num_wrap .num {
+  margin: 0 20rpx;
+}
+.cart_content .cart_list .cart_item .content_info .price_num .num_wrap .add {
+  padding: 0 15rpx;
+}
+.cart_content image {
+  width: 100vw;
+}
+.bottom_tools {
+  font-size: 34rpx;
+  position: fixed;
+  height: 100rpx;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top: 1rpx solid #ccc;
+}
+.bottom_tools .allchoose {
+  flex: 1;
+}
+.bottom_tools .allchoose checkbox-group checkbox {
+  font-size: 32rpx;
+}
+.bottom_tools .total_yunfei {
+  padding-right: 30rpx;
+  flex: 2;
+  text-align: right;
+}
+.bottom_tools .total_yunfei .totolprice {
+  font-size: 200;
+}
+.bottom_tools .total_yunfei .totolprice .price {
+  color: var(--themeColor);
+}
+.bottom_tools .total_yunfei .yunfei {
+  font-size: 26rpx;
+  color: #ccc;
+}
+.bottom_tools .pay {
+  height: 100%;
+  line-height: 100rpx;
+  text-align: center;
+  color: white;
+  background-color: var(--themeColor);
+  font-size: 34rpx;
+  font-weight: 600;
+  flex: 1;
+}
+.loginto {
+  margin: 20rpx auto;
+  height: 80rpx;
+  width: 70%;
+  line-height: 80rpx;
+  text-align: center;
+  border: 1rpx solid #75c275;
+  border-radius: 15rpx;
+  color: #75c275;
+  font-weight: 600;
+  font-size: 34rpx;
+}

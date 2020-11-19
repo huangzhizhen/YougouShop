@@ -1,0 +1,122 @@
+page {
+  background-color: #edece8;
+}
+.userinf_content {
+  height: 50vh;
+  position: relative;
+  overflow: hidden;
+}
+.userinf_content .img-wrap .img_bgc {
+  height: 55vh;
+}
+.userinf_content .img-wrap .img_bgc image {
+  width: 100vw;
+  height: 55vh;
+  filter: blur(10rpx);
+}
+.userinf_content .img-wrap .img_userinfo {
+  width: 200rpx;
+  height: 30vh;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.userinf_content .img-wrap .img_userinfo .img_mini {
+  width: 150rpx;
+  height: 150rpx;
+  border-radius: 50%;
+}
+.userinf_content .img-wrap .img_userinfo .username {
+  color: white;
+  font-weight: 400;
+  font-size: 30rpx;
+}
+.userinf_content .login_bnt {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-color: var(--themeColor);
+}
+.userinf_content .login_bnt navigator {
+  width: 80px;
+  height: 80rpx;
+  font-size: 38rpx;
+  color: white;
+  font-weight: 600;
+  border: 1rpx solid white;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto auto;
+}
+.detail_list {
+  font-size: 30rpx;
+  font-weight: 400;
+  color: #666;
+  width: 95vw;
+  position: absolute;
+  top: 40vh;
+  background-color: #edece8;
+  margin: 0 20rpx;
+}
+.detail_list .wrap_list {
+  background-color: white;
+}
+.detail_list .list {
+  background-color: white;
+  padding: 0 35rpx;
+  line-height: 70rpx;
+  margin-bottom: 5rpx;
+}
+.detail_list .collect_shop_wrap {
+  width: 100%;
+  height: 100rpx;
+  display: flex;
+  /*justify-content: center;
+    align-items: center;*/
+}
+.detail_list .collect_shop_wrap .collect_item {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.detail_list .num {
+  color: var(--themeColor);
+}
+.detail_list .my_order {
+  margin: 20rpx 0 5rpx 0;
+}
+.detail_list .other {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 5rpx;
+}
+.detail_list .my_address {
+  margin: 20rpx 0;
+}
+.detail_list .share {
+  margin: 20rpx 0 20px 0;
+}
+.detail_list .login {
+  margin-bottom: 100rpx;
+  background-color: var(--themeColor);
+}
+.detail_list .login button {
+  width: 100%;
+  background-color: var(--themeColor);
+  color: white;
+}

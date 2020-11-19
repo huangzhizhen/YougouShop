@@ -1,0 +1,165 @@
+<!-- pages/order/index.wxml -->
+<Tab tabs="{{tabs}}" bindtabItemChange="handleTabItem">
+    <block wx:if="{{tabs[0].isActive}}">
+        <view class="order_info">
+            <view class="order_no_wrap item">
+                <view class="order_no  item1">订单编号</view>
+                <view class="item2">GD202011150000556</view>
+            </view>
+            <view class="order_price_wrap item">
+                <view class="order_price item1">订单价格</view>
+                <view class="item2 jiage">￥228</view>
+            </view>
+            <view class="order_date item">
+                <view class="order_price item1">订单日期</view>
+                <view class="item2 date">2019/9/9 下午4：48：06</view>
+            </view>
+        </view>
+         <view class="order_info">
+            <view class="order_no_wrap item">
+                <view class="order_no  item1">订单编号</view>
+                <view class="item2">FE202011150000556</view>
+            </view>
+            <view class="order_price_wrap item">
+                <view class="order_price item1">订单价格</view>
+                <view class="item2 jiage">￥198</view>
+            </view>
+            <view class="order_date item">
+                <view class="order_price item1">订单日期</view>
+                <view class="item2 date">2019/9/16 上午11：48：06</view>
+            </view>
+        </view>
+         <view class="order_info">
+            <view class="order_no_wrap item">
+                <view class="order_no  item1">订单编号</view>
+                <view class="item2">AE202011150000556</view>
+            </view>
+            <view class="order_price_wrap item">
+                <view class="order_price item1">订单价格</view>
+                <view class="item2 jiage">￥5899</view>
+            </view>
+            <view class="order_date item">
+                <view class="order_price item1">订单日期</view>
+                <view class="item2 date">2019/9/18 上午10：47：06</view>
+            </view>
+        </view>
+          <view class="order_info">
+            <view class="order_no_wrap item">
+                <view class="order_no  item1">订单编号</view>
+                <view class="item2">FE202011150000556</view>
+            </view>
+            <view class="order_price_wrap item">
+                <view class="order_price item1">订单价格</view>
+                <view class="item2 jiage">￥198</view>
+            </view>
+            <view class="order_date item">
+                <view class="order_price item1">订单日期</view>
+                <view class="item2 date">2019/9/16 上午11：48：06</view>
+            </view>
+        </view>
+         <view class="order_info">
+            <view class="order_no_wrap item">
+                <view class="order_no  item1">订单编号</view>
+                <view class="item2">AE202011150000556</view>
+            </view>
+            <view class="order_price_wrap item">
+                <view class="order_price item1">订单价格</view>
+                <view class="item2 jiage">￥5899</view>
+            </view>
+            <view class="order_date item">
+                <view class="order_price item1">订单日期</view>
+                <view class="item2 date">2019/9/18 上午10：47：06</view>
+            </view>
+        </view>
+    </block>
+    <block wx:if="{{tabs[1].isActive}}">
+          <view class="order_info">
+            <view class="order_no_wrap item">
+                <view class="order_no  item1">订单编号</view>
+                <view class="item2">FE202011150000556</view>
+            </view>
+            <view class="order_price_wrap item">
+                <view class="order_price item1">订单价格</view>
+                <view class="item2 jiage">￥198</view>
+            </view>
+            <view class="order_date item">
+                <view class="order_price item1">订单日期</view>
+                <view class="item2 date">2019/9/16 上午11：48：06</view>
+            </view>
+        </view>
+         <view class="order_info">
+            <view class="order_no_wrap item">
+                <view class="order_no  item1">订单编号</view>
+                <view class="item2">AE202011150000556</view>
+            </view>
+            <view class="order_price_wrap item">
+                <view class="order_price item1">订单价格</view>
+                <view class="item2 jiage">￥5899</view>
+            </view>
+            <view class="order_date item">
+                <view class="order_price item1">订单日期</view>
+                <view class="item2 date">2019/9/18 上午10：47：06</view>
+            </view>
+        </view>
+    </block>
+    <block wx:if="{{tabs[2].isActive}}">
+         <view class="order_info">
+            <view class="order_no_wrap item">
+                <view class="order_no  item1">订单编号</view>
+                <view class="item2">FE202011150000556</view>
+            </view>
+            <view class="order_price_wrap item">
+                <view class="order_price item1">订单价格</view>
+                <view class="item2 jiage">￥788</view>
+            </view>
+            <view class="order_date item">
+                <view class="order_price item1">订单日期</view>
+                <view class="item2 date">2019/9/16 上午11：48：06</view>
+            </view>
+        </view>
+         <view class="order_info">
+            <view class="order_no_wrap item">
+                <view class="order_no  item1">订单编号</view>
+                <view class="item2">AE202011150000556</view>
+            </view>
+            <view class="order_price_wrap item">
+                <view class="order_price item1">订单价格</view>
+                <view class="item2 jiage">￥59</view>
+            </view>
+            <view class="order_date item">
+                <view class="order_price item1">订单日期</view>
+                <view class="item2 date">2019/9/18 上午10：47：06</view>
+            </view>
+        </view>
+    </block>
+    <block wx:if="{{tabs[3].isActive}}">
+          <view class="order_info">
+            <view class="order_no_wrap item">
+                <view class="order_no  item1">订单编号</view>
+                <view class="item2">FE202011150000556</view>
+            </view>
+            <view class="order_price_wrap item">
+                <view class="order_price item1">订单价格</view>
+                <view class="item2 jiage">￥198</view>
+            </view>
+            <view class="order_date item">
+                <view class="order_price item1">订单日期</view>
+                <view class="item2 date">2019/9/16 上午11：48：06</view>
+            </view>
+        </view>
+         <view class="order_info">
+            <view class="order_no_wrap item">
+                <view class="order_no  item1">订单编号</view>
+                <view class="item2">AE202011150000556</view>
+            </view>
+            <view class="order_price_wrap item">
+                <view class="order_price item1">订单价格</view>
+                <view class="item2 jiage">￥5899</view>
+            </view>
+            <view class="order_date item">
+                <view class="order_price item1">订单日期</view>
+                <view class="item2 date">2019/9/18 上午10：47：06</view>
+            </view>
+        </view>
+    </block>
+</Tab>

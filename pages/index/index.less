@@ -1,0 +1,58 @@
+/* pages/index/index.wxss */
+.index_swiper{
+
+    swiper{
+        width: 750rpx;
+        height: 340rpx;
+        image{
+            width: 100%;
+        }
+    }
+}
+
+.index_cate{
+    display: flex;
+    /*flex-direction: row;*/
+    navigator{
+        padding:20rpx;
+        flex:1;
+        image{
+            width: 100%;
+        }
+    }
+}
+
+.index-floor{
+    overflow: hidden;
+    .floor-group{
+        .floor_title{
+            image{
+                width: 100%;
+            }
+           
+        }
+        navigator{
+            float: left;
+            width: 33.333%;
+            //282*386
+            //算出按比例显示得第一张图得高度
+            //232/386=33.33vm/h
+            //h=33.33vm*386/282
+            //使得后四张图得高度等于第一张图得一半
+            //-n+4表示后四位子孩子
+            &:nth-last-child(-n+4){
+                height: 33.33vw*386 / 232 /2;
+                border: 10rpx solid white;
+            }
+            &:nth-child(2),
+            &:nth-child(3){
+                border-bottom: 10rpx solid white;
+            }
+            image{
+                width: 100%;
+                height: 100%;
+
+            }
+        }
+    }
+}

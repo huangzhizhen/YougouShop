@@ -1,0 +1,6 @@
+.auth.warp {
+  padding: 30rpx;
+}
+.auth.warp button {
+  width: 70%;
+}

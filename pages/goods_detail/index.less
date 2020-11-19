@@ -1,0 +1,114 @@
+/* pages/goods_detail/index.wxss */
+page{
+    /*由于底部的固定tools是脱离文档不占位置的，但是会挡到其他，因此给page设置一个padding-bottom*/
+    padding-bottom: 90rpx;
+}
+.goods_detail_wrap{
+    .gd_imgs{
+        height: 65vw;
+        text-align: center;
+        image{
+            
+            width: 60%;
+        }
+    }
+    .gd_price{
+        font-size: 32rpx;
+        font-weight: 600;
+        color: var(--themeColor);
+       padding: 15rpx;
+    }
+    .gd_name_rows{
+        color: #938991;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-bottom: 5rpx solid #ccc;
+        padding:10rpx 0;
+        .goods_name{
+            flex: 5;
+            margin: 0 10rpx;
+            font-size: 30rpx;
+            display: -webkit-box;
+            overflow: hidden;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 2;
+        }
+        .gd_icon{
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            border-left: 1rpx solid #ccc;
+            .icon-shoucang{
+                color: orange;
+            }
+            .icon-text{
+
+            }
+        }
+    }
+    .gd_info{
+        .goods_info_title{
+            padding:20rpx;
+            font-size: 40rpx;
+            color: var(--themeColor);
+            font-weight: 600;
+        }
+        .goods_info_content{
+
+        }
+    }
+}
+
+.bottom_tools{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 90rpx;
+    background-color: white;
+    border-top: 2rpx solid #ccc;
+    display: flex;
+    .tools-item{
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        font-size: 26rpx;
+        margin-left: 10rpx;
+        position: relative;
+        button{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            opacity: 0;
+        }     
+    }
+    .takein{  
+        flex: 2;
+        color: white;
+        font-size: 32rpx;
+        font-weight: 600;
+        display: flex;
+        flex-direction: column; 
+        justify-content: center;
+        align-items: center;
+        background-color: orange;
+    }
+    .buy{
+        flex: 2;
+        color: white;
+        font-size: 32rpx;
+        font-weight: 600;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: var(--themeColor);
+    }
+}

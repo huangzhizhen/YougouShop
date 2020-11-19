@@ -1,0 +1,6 @@
+.login_botton {
+  padding: 30rpx;
+}
+.login_botton button {
+  width: 70%;
+}

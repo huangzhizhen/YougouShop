@@ -1,0 +1,82 @@
+<!-- <navigator url="/pages/login/index">登录</navigator> -->
+<view class="userinf_content">
+    <view wx:if="{{userinfo.avatarUrl}}" class="img-wrap">
+        <view class="img_bgc">
+            <image src="{{userinfo.avatarUrl}}" />
+        </view>
+        <view class="img_userinfo">
+            <image class="img_mini" src="{{userinfo.avatarUrl}}" />
+            <view class="username">{{userinfo.nickName}}</view>
+        </view>
+    </view>
+    <view class="login_bnt">
+        <navigator url="/pages/login/index">登录</navigator>
+    </view>
+</view>
+<!-- 中间模块 -->
+<view class="detail_list">
+    <view class="collect_shop_wrap wrap_list">
+        <navigator class="collect_shop collect_item">
+            <view class="shop_num num">0</view>
+            <view class="shop_text">收藏的店铺</view>
+        </navigator>
+        <navigator class="collect_goods collect_item" bindtap="tiaozhuan">
+            <view class="goods_num num">{{collectNum}}</view>
+            <view class="goods_text">收藏的商品</view>
+        </navigator>
+        <navigator class="notice_goods collect_item">
+            <view class="goods_num num">0</view>
+            <view class="goods_text">关注的商品</view>
+        </navigator>
+        <navigator class="track collect_item">
+            <view class="track_num num">0</view>
+            <view class="track_text">我的足迹</view>
+        </navigator>
+    </view>
+    <navigator class="my_order list">我的订单</navigator>
+    <view class="collect_shop_wrap wrap_list">
+        <navigator class="collect_shop collect_item" url="/pages/order/index?type=1">
+            <view class="shop_num num iconfont icon-dingdan"></view>
+            <view class="shop_text">全部订单</view>
+        </navigator>
+        <navigator class="collect_goods collect_item" url="/pages/order/index?type=2">
+            <view class="goods_num num iconfont icon-kefu"></view>
+            <view class="goods_text">待付款</view>
+        </navigator>
+        <navigator class="notice_goods collect_item" url="/pages/order/index?type=3">
+            <view class="goods_num num iconfont icon-receipt-address"></view>
+            <view class="goods_text">待收货</view>
+        </navigator>
+        <navigator class="track collect_item" url="/pages/order/index?type=4">
+            <view class="track_num num iconfont icon-tuihuotuikuan"></view>
+            <view class="track_text">退款/退货</view>
+        </navigator>
+    </view>
+    <view class="my_address list other">
+        <view>收货地址管理</view>
+        <view class="iconfont icon-arrow-right nihao"></view>
+    </view>
+    <view class="servic list other">
+        <view>联系客服</view>
+        <view>400-677-6666</view>
+    </view>
+
+    <view class="advice list other">
+        <view>关于我们</view>
+        <view class="iconfont icon-arrow-right"></view>
+    </view>
+    <navigator url="/pages/feedback/index" class="about list other">
+        <view>意见反馈</view>
+        <view class="iconfont icon-arrow-right"></view>
+    </navigator>
+    <view class="share list other">
+        <view>把应用推荐给其他人</view>
+        <view class="iconfont icon-arrow-right"></view>
+    </view>
+
+    <block wx:if="{{islogin}}">
+        <view class="login list other" bindtap="logout" open-type="swithTab">
+            <button>退出登录</button>
+        </view>
+    </block>
+</view>

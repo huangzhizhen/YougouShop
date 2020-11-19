@@ -1,0 +1,15 @@
+<!-- components/Tab/Tab.wxml -->
+<view class="tab-swipper">
+    <view class="tab-title">
+        <view class="tab-item {{item.isActive?'isActive':''}}" wx:for="{{tabs}}" wx:key="{{id}}" bindtap="changeItemActive" data-index="{{index}}">
+            {{item.title}}
+        </view>
+    </view>
+    <view class="tab-content">
+    <!--使用插槽插入显示效果，表示在父组件中使用的<Tabs>内部加的标签，都显示在
+      这个view下，所加的内容在父组件中定义即可（结构和样式都在父组件中）
+    
+    -->
+        <slot></slot>
+    </view>
+</view>

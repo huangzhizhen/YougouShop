@@ -1,0 +1,25 @@
+<!-- pages/goods_list/index.wxml -->
+<SearchInput></SearchInput>
+<Tab tabs="{{tabs}}" bindtabItemChange="handleTabItem">
+    <block wx:if="{{tabs[0].isActive}}">
+        <view class="first_tab">
+            <navigator class="goods_item" 
+            wx:for="{{GoodsList}}"
+            wx:key="{{goods_id}}"
+            url="/pages/goods_detail/index?goods_id={{item.goods_id}}"
+            >
+                <view class="goods_img_wrap">
+                    <image mode="widthFix" src="{{item.goods_big_logo}}" />
+                </view>
+                <view class="goods_info_wrap">
+                    <view class="goods_name">{{item.goods_name}}</view>
+                    <view class="goods_price">￥{{item.goods_price}}</view>
+                </view>
+            </navigator>
+        </view>
+    </block>
+
+
+    <block wx:if="{{tabs[1].isActive}}">2</block>
+    <block wx:if="{{tabs[2].isActive}}">3</block>
+</Tab>

@@ -1,0 +1,41 @@
+/* pages/index/index.wxss */
+.index_swiper swiper {
+  width: 750rpx;
+  height: 340rpx;
+}
+.index_swiper swiper image {
+  width: 100%;
+}
+.index_cate {
+  display: flex;
+  /*flex-direction: row;*/
+}
+.index_cate navigator {
+  padding: 20rpx;
+  flex: 1;
+}
+.index_cate navigator image {
+  width: 100%;
+}
+.index-floor {
+  overflow: hidden;
+}
+.index-floor .floor-group .floor_title image {
+  width: 100%;
+}
+.index-floor .floor-group navigator {
+  float: left;
+  width: 33.333%;
+}
+.index-floor .floor-group navigator:nth-last-child(-n+4) {
+  height: 27.72711207vw;
+  border: 10rpx solid white;
+}
+.index-floor .floor-group navigator:nth-child(2),
+.index-floor .floor-group navigator:nth-child(3) {
+  border-bottom: 10rpx solid white;
+}
+.index-floor .floor-group navigator image {
+  width: 100%;
+  height: 100%;
+}

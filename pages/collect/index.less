@@ -1,0 +1,62 @@
+/* pages/collect/index.wxss */
+
+.biaoqian {
+    display: flex;
+    font-size: 32rpx;
+    border-bottom: 1rpx solid #cccccc;
+    background-color: #f3f4f6;
+    .bq-item {
+        height: 70rpx;
+        line-height: 70rpx;
+        //text-align: center;
+        padding-left: 10rpx;
+        padding-right: 10rpx;
+        margin: 15rpx;
+        border: 1rpx solid #ccc;
+    }
+    .isActive {
+        color: var(--themeColor);
+        border-color: currentColor;
+    }
+}
+
+.col-List {
+    .col-item {
+        display: flex;
+        padding: 0 20rpx;
+        border-bottom: 1rpx solid #ccc;
+
+        .col-item-img {
+            height: 190rpx;
+            flex: 2;
+            display: flex;
+            align-items: center;
+
+            image {
+                width: 90%;
+            }
+        }
+
+        .col-item-info {
+            flex: 5;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            font-size: 32rpx;
+            font-weight: 400rpx;
+            margin-left: 30rpx;
+
+            .info-price {
+                color: var(--themeColor);
+                font-weight: 600;
+            }
+
+            .info-title {
+                display: -webkit-box;
+                overflow: hidden;
+                -webkit-box-orient: vertical;
+                -webkit-line-clamp: 2; //表示第二行显示...
+            }
+        }
+    }
+}

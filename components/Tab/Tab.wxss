@@ -1,0 +1,15 @@
+.tab-swipper .tab-title {
+  display: flex;
+  height: 90rpx;
+}
+.tab-swipper .tab-title .tab-item {
+  display: flex;
+  flex: 1;
+  color: #666;
+  align-items: center;
+  justify-content: center;
+}
+.tab-swipper .tab-title .isActive {
+  color: #eb4450;
+  border-bottom: 5rpx solid currentColor;
+}

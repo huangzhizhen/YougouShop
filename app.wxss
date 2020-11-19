@@ -1,0 +1,29 @@
+@import "./styles/iconfont.wxss";
+
+
+/*在app.wxss下定义的所有，均为全局属性，其他均可以用*/
+/*在微信小程序中，不支持通配符’*‘*/
+page,view,text,swiper,swiper-item,image,navigator{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*
+定义微信小程序的主体颜色
+原生的css和微信小程序的wxss都支持变量
+*/
+page{
+  /*定义
+  使用
+  color:var(--themeColor);
+  */
+  --themeColor:#eb4450;
+
+  /*统一定义字体大小
+  由于i6：375px=750rpx
+  所以：1px=2rpx
+  因此14px=28rpx
+    */
+  font-size: 28rpx;
+}

@@ -1,0 +1,9 @@
+<view class="serchkey">
+    <input type="text" value="{{inpuValue}}" placeholder="请输入搜索词" bindinput="handleInput" />
+    <button bindtap="cancleR" hidden="{{!isFouse}}">取消</button>
+
+</view>
+
+<view class="search_results" wx:for="{{goods}}" wx:key="goods_id">
+    <navigator class="result" url="/pages/goods_detail/index?goods_id={{item.goods_id}}">{{item.goods_name}}</navigator>
+</view>

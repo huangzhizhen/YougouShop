@@ -1,0 +1,20 @@
+<Tab tabs="{{tabs}}" bindtabItemChange="changItemIsAcitve">
+    <view class="biaoqian">
+        <view class="all bq-item isActive">全部</view>
+        <view class="hotting bq-item">正在热卖</view>
+        <view class="wonine bq-item">即将上线</view>
+    </view>
+    <view class="col-List">
+        <navigator wx:for="{{collectGoods}}" wx:key="goods_id" url="/pages/goods_detail/index?goods_id={{item.goods_id}}">
+            <view class="col-item">
+                <view class="col-item-img">
+                    <image mode="widthFix" src="{{item.goods_small_logo}}" />
+                </view>
+                <view class="col-item-info">
+                    <view class="info-title">{{item.goods_name}}</view>
+                    <view class="info-price">￥{{item.goods_price}}</view>
+                </view>
+            </view>
+        </navigator>
+    </view>
+</Tab>

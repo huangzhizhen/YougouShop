@@ -1,0 +1,139 @@
+page {
+    background-color: #edece8;
+
+}
+
+.userinf_content {
+    height: 50vh;
+    position: relative;
+    overflow: hidden;
+    .img-wrap {
+        .img_bgc {
+            height: 55vh;
+            image {
+                width: 100vw;
+                height: 55vh;
+                filter: blur(10rpx);
+            }
+        }
+
+        .img_userinfo {
+            width: 200rpx;
+            height: 30vh;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+
+            .img_mini {
+                width: 150rpx;
+                height: 150rpx;
+                border-radius: 50%;
+
+            }
+
+            .username {
+                color: white;
+                font-weight: 400;
+                font-size: 30rpx;
+            }
+        }
+    }
+
+    .login_bnt {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        background-color: var(--themeColor);
+
+        navigator {
+            width: 80px;
+            height: 80rpx;
+            font-size: 38rpx;
+            color: white;
+            font-weight: 600;
+            border: 1rpx solid white;
+            position: absolute;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto auto;
+        }
+    }
+}
+
+
+.detail_list {
+    font-size: 30rpx;
+    font-weight: 400;
+    color: #666;
+    width: 95vw;
+    position: absolute;
+    top: 40vh;
+    background-color: #edece8;
+    margin: 0 20rpx;
+
+    .wrap_list{
+        background-color: white;
+    }
+    .list {
+        background-color: white;
+        padding: 0 35rpx;
+        line-height: 70rpx;
+        margin-bottom: 5rpx;
+    }
+
+    .collect_shop_wrap {
+        width: 100%;
+        height: 100rpx;
+        display: flex;
+
+        /*justify-content: center;
+    align-items: center;*/
+        .collect_item {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+    .num {
+        color: var(--themeColor);
+    }
+    .my_order {
+        margin: 20rpx 0 5rpx 0;
+    }
+
+    .other{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 5rpx;
+    }
+    .my_address{
+        margin: 20rpx 0;
+    }
+    .share{
+        margin: 20rpx 0 20px 0;
+    }
+    .login{
+        margin-bottom: 100rpx;
+        background-color: var(--themeColor);
+        button{
+            width: 100%;
+            background-color: var(--themeColor);
+            color: white;
+        }
+    }
+    
+}

@@ -1,0 +1,16 @@
+/* components/upImage/upImage.wxss */
+.upImage_wrap {
+  height: 100rpx;
+  width: 100rpx;
+  position: relative;
+}
+.upImage_wrap image {
+  border-radius: 10rpx;
+  width: 100%;
+  height: 100%;
+}
+.upImage_wrap icon {
+  position: absolute;
+  right: -20rpx;
+  top: -20rpx;
+}

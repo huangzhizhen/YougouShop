@@ -1,0 +1,80 @@
+/* pages/feedback/index.wxss */
+/**
+1.实现+添加图片按钮
+ 1.1 点击时触发小程序内置的添加图片的api方法
+ 1.2 然后将获取的信息放入打他中，最后在upIamge中进行渲染显示
+*/
+page {
+  background-color: #f3f4f6;
+}
+.fb_main {
+  padding: 20rpx;
+}
+.fb_main .tltle {
+  font-size: 30rpx;
+  color: #666;
+}
+.fb_main .content_wrap .content_biaoqian {
+  color: #666;
+  display: flex;
+  flex-wrap: wrap;
+}
+.fb_main .content_wrap .content_biaoqian text {
+  text-align: center;
+  width: 30%;
+  background-color: white;
+  padding: 10rpx;
+  margin: 20rpx 10rpx;
+}
+.fb_main .content_wrap .dsc_wrap {
+  margin-top: 20rpx;
+}
+.fb_main .content_wrap .dsc_wrap textarea {
+  width: 90vw;
+  background-color: white;
+  padding: 15rpx;
+}
+.fb_main .content_wrap .dsc_wrap .upload_img {
+  background-color: white;
+  display: flex;
+  flex-wrap: wrap;
+  padding-bottom: 20rpx;
+}
+.fb_main .content_wrap .dsc_wrap .upload_img button {
+  background-color: #f3f4f6;
+  border: 1rpx solid #ccc;
+  color: #ccc;
+  font-size: 40rpx;
+  font-weight: 400;
+  width: 100rpx;
+  height: 100rpx;
+  margin: 0;
+  padding: 0;
+  margin-left: 20rpx;
+  margin-right: 15rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.fb_main .content_wrap .dsc_wrap .upload_img .upimage {
+  margin-right: 15rpx;
+  margin-bottom: 15rpx;
+}
+.fb_main .content_wrap .tijiao {
+  margin-top: 20rpx;
+  display: flex;
+  justify-content: flex-end;
+}
+.fb_main .content_wrap .tijiao button {
+  width: 30%;
+  padding: 10rpx;
+  float: right;
+  margin: 0;
+  font-size: 30rpx;
+  color: white;
+  font-weight: 200;
+  background-color: var(--themeColor);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

@@ -1,0 +1,6 @@
+<!-- components/SearchInput/SearchInput.wxml -->
+<view class="search-input">
+    <!-- 该搜索框点击会跳转，因此这里设置导航组件
+1.open-type:navigate表示跳转到非tabBar页面 -->
+    <navigator url="/pages/search/index" open-type="navigate">搜索</navigator>
+</view>
