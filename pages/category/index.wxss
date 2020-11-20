@@ -33,10 +33,12 @@ page {
   display: flex;
   justify-content: center;
   align-items: center;
+  font-size: 30rpx;
+  font-weight: 400;
 }
 .cates .cates_container .right_content .goods_group .goods_title .delimiter {
   color: #ccc;
-  padding: 0 10rpx;
+  padding: 0 20rpx;
 }
 .cates .cates_container .right_content .goods_group .goods_list {
   display: flex;

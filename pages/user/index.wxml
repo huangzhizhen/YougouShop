@@ -52,30 +52,34 @@
             <view class="track_text">退款/退货</view>
         </navigator>
     </view>
-    <view class="my_address list other">
+    <view class="my_address list other" bindtap = "addAddress">
         <view>收货地址管理</view>
         <view class="iconfont icon-arrow-right nihao"></view>
     </view>
     <view class="servic list other">
         <view>联系客服</view>
+        <button open-type="contact"></button>
         <view>400-677-6666</view>
     </view>
 
     <view class="advice list other">
         <view>关于我们</view>
         <view class="iconfont icon-arrow-right"></view>
+        <button bindtap = "aboutUs"></button>
     </view>
-    <navigator url="/pages/feedback/index" class="about list other">
+    <view class="about list other">
         <view>意见反馈</view>
+        <button bindtap = "feedback"></button>
         <view class="iconfont icon-arrow-right"></view>
-    </navigator>
+    </view>
     <view class="share list other">
         <view>把应用推荐给其他人</view>
         <view class="iconfont icon-arrow-right"></view>
+        <button open-type="share"></button>
     </view>
 
     <block wx:if="{{islogin}}">
-        <view class="login list other" bindtap="logout" open-type="swithTab">
+        <view class="login other" bindtap="logout" open-type="swithTab">
             <button>退出登录</button>
         </view>
     </block>

@@ -1,12 +1,18 @@
 page {
     padding-bottom: 90rpx;
 }
+
 .revice_address_row {
     .address_btn {
         padding: 20rpx;
 
         button {
             width: 60%;
+            font-size: 36rpx;
+            border-radius: 15rpx;
+            border-color: var(--themeColor);
+            background-color: var(--themeColor);
+            color: white
         }
     }
 
@@ -14,7 +20,7 @@ page {
         font-size: 30rpx;
         display: flex;
         padding: 20rpx;
-
+        color: #666;
         .user_info {
             flex: 5;
         }
@@ -40,7 +46,8 @@ page {
         .cart_item {
             display: flex;
             border-bottom: 1rpx solid #ccc;
-            padding:10rpx;
+            padding: 10rpx;
+
             .cart_chk_wrap {
                 flex: 1;
                 display: flex;
@@ -50,7 +57,13 @@ page {
                 checkbox-group {
 
                     //height: 2rpx;
-                    checkbox {}
+                    checkbox {
+                        .wx-checkbox-input{
+                            width: 38rpx;
+                            height: 38rpx;
+                            border-radius: 50%;
+                        }
+                    }
                 }
             }
 
@@ -70,6 +83,7 @@ page {
                 margin-left: 20rpx;
                 flex-direction: column;
                 justify-content: space-around;
+
                 .dsc {
                     font-size: 32rpx;
                     color: #666;
@@ -94,16 +108,22 @@ page {
                         font-size: 32rpx;
                         font-weight: 400;
                         margin-right: 43rpx;
+
                         .edit_num {
                             display: flex;
                             justify-content: center;
                             align-items: center;
+                            font-size: 34rpx;
                             width: 40rpx;
                             height: 40rpx;
-                            border: 1rpx solid black;
+                            line-height: 40rpx;
+                            border-radius: 50%;
+                            border: 1rpx solid #666;
+                            color: #666;
                         }
 
                         .num {
+                            color:#666;
                             margin: 0 20rpx;
                         }
 
@@ -115,12 +135,13 @@ page {
             }
         }
     }
-    image{
+
+    image {
         width: 100vw;
     }
 }
 
-.bottom_tools{
+.bottom_tools {
     font-size: 34rpx;
     position: fixed;
     height: 100rpx;
@@ -132,33 +153,47 @@ page {
     justify-content: center;
     align-items: center;
     border-top: 1rpx solid #ccc;
-    .allchoose{
+
+    .allchoose {
         flex: 1;
-        checkbox-group{
-            checkbox{
-                font-size: 32rpx;
+
+        checkbox-group {
+            checkbox {
+                .wx-checkbox-input{
+                    width: 38rpx;
+                    height: 38rpx;
+                    border-radius: 50%;
+                }
+                /*.wx-checkbox-input.wx-checkbox-input-checked {
+                    background-color: ;
+                }*/
             }
+
         }
     }
-    .total_yunfei{
+
+    .total_yunfei {
         padding-right: 30rpx;
         flex: 2;
         text-align: right;
-        .totolprice{
-            font-size: 200;
-            .text_price{
 
-            }
-            .price{
+        .totolprice {
+            font-size: 200;
+
+            .text_price {}
+
+            .price {
                 color: var(--themeColor);
             }
         }
-        .yunfei{
+
+        .yunfei {
             font-size: 26rpx;
-            color: #ccc;
+            color: #666;
         }
     }
-    .pay{
+
+    .pay {
         height: 100%;
         line-height: 100rpx;
         text-align: center;
@@ -169,10 +204,10 @@ page {
         flex: 1;
 
     }
-    
+
 }
 
-.loginto{
+.loginto {
     margin: 20rpx auto;
     height: 80rpx;
     width: 70%;
@@ -183,4 +218,23 @@ page {
     color: rgb(117, 194, 117);
     font-weight: 600;
     font-size: 34rpx;
+}
+
+
+.dsc-text {
+    color: #666;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 300rpx;
+
+    .icon-shopshoppingco {
+        font-size: 100rpx;
+    }
+
+    .text {
+        font-size: 30rpx;
+        margin-top: 20rpx;
+    }
 }

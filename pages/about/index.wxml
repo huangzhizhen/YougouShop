@@ -1,0 +1,8 @@
+<!--pages/about/index.wxml-->
+
+<view class="about-wrap">
+    <view class="icon">
+        <i class="iconfont icon-jieshaoxinxi_o"></i>
+    </view>
+    <view class="about-text">抱歉，暂时还没有相关介绍哦！</view>
+</view>

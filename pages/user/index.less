@@ -82,15 +82,26 @@ page {
     top: 40vh;
     background-color: #edece8;
     margin: 0 20rpx;
-
     .wrap_list{
         background-color: white;
+    }
+    .servic{
+        position: relative;
     }
     .list {
         background-color: white;
         padding: 0 35rpx;
         line-height: 70rpx;
         margin-bottom: 5rpx;
+        position: relative;
+        button{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            opacity: 0;
+        } 
     }
 
     .collect_shop_wrap {
@@ -128,6 +139,7 @@ page {
     }
     .login{
         margin-bottom: 100rpx;
+        border-radius: 15rpx;
         background-color: var(--themeColor);
         button{
             width: 100%;

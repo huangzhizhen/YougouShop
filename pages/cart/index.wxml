@@ -1,70 +1,90 @@
 <!-- 收货地址 -->
 <block wx:if="{{islogin}}">
-<view class="revice_address_row">
-    <!-- 当收货地址 不存在 按钮显示  对象 空对象 bool类型也是true -->
-    <view class="address_btn" wx:if="{{!address.userName}}">
-        <button bindtap="handleChooseAddress" type="primary" plain>获取收货地址</button>
-    </view>
-    <!-- 当收货地址 存在 详细信息就显示 -->
-    <view wx:else class="user_info_row">
-        <view class="user_info">
-            <view>{{address.userName}}</view>
-            <view>{{address.all}}</view>
+    <view class="revice_address_row">
+        <!-- 当收货地址 不存在 按钮显示  对象 空对象 bool类型也是true -->
+        <view class="address_btn" wx:if="{{!address.userName}}">
+            <button bindtap="handleChooseAddress" plain>获取收货地址</button>
         </view>
-        <view class="user_phone">{{address.telNumber}}</view>
+        <!-- 当收货地址 存在 详细信息就显示 -->
+        <view wx:else class="user_info_row">
+            <view class="user_info">
+                <view>{{address.userName}}</view>
+                <view>{{address.all}}</view>
+            </view>
+            <view class="user_phone">{{address.telNumber}}</view>
+        </view>
     </view>
-</view>
-<view class="cart_content">
-    <navigator class="content_title" url="/pages/cart/index">购物车</navigator>
-    <block wx:if="{{cartList.length!=0}}">
-        <view class="cart_list">
-            <view class="cart_item" wx:for="{{cartList}}" wx:key="goods_id">
-                <view class="cart_chk_wrap">
-                    <checkbox-group bindchange="handelChangeItem" data-id="{{item.goods_id}}">
-                        <checkbox checked="{{item.check}}" />
-                    </checkbox-group>
-                </view>
-                <navigator class="imgwrap">
-                    <image mode="widtfFix" src="{{item.goods_small_logo}}" />
-                </navigator>
-                <view class="content_info">
-                    <view class="dsc">{{item.goods_name}}</view>
-                    <view class="price_num">
-                        <view class="price">￥{{item.goods_price}}</view>
-                        <view class="num_wrap">
-                            <view class="sub edit_num" bindtap="countNum" data-id="{{item.goods_id}}" data-operation="{{-1}}">
-                                -
-                            </view>
-                            <view class="num">{{item.num}}</view>
-                            <view class="add edit_num" bindtap="countNum" data-id="{{item.goods_id}}" data-operation="{{1}}">
-                                +
+    <view class="cart_content">
+        <navigator class="content_title" url="/pages/cart/index">购物车</navigator>
+        <block wx:if="{{cartList.length!=0}}">
+            <view class="cart_list">
+                <view class="cart_item" wx:for="{{cartList}}" wx:key="goods_id">
+                    <view class="cart_chk_wrap">
+                        <checkbox-group bindchange="handelChangeItem" data-id="{{item.goods_id}}">
+                            <checkbox checked="{{item.check}}" />
+                        </checkbox-group>
+                    </view>
+                    <navigator class="imgwrap">
+                        <image mode="widtfFix" src="{{item.goods_small_logo}}" />
+                    </navigator>
+                    <view class="content_info">
+                        <view class="dsc">{{item.goods_name}}</view>
+                        <view class="price_num">
+                            <view class="price">￥{{item.goods_price}}</view>
+                            <view class="num_wrap">
+                                <view class="sub edit_num" bindtap="countNum" data-id="{{item.goods_id}}"
+                                    data-operation="{{-1}}">
+                                    -
+                                </view>
+                                <view class="num">{{item.num}}</view>
+                                <view class="add edit_num" bindtap="countNum" data-id="{{item.goods_id}}"
+                                    data-operation="{{1}}">
+                                    +
+                                </view>
                             </view>
                         </view>
                     </view>
                 </view>
             </view>
-        </view>
-    </block>
-    <block wx:else><image mode="widthFix" src="https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=3459299675,4037737073&fm=26&gp=0.jpg" /></block>
-</view>
-<view class="bottom_tools">
-    <view class="allchoose">
-        <checkbox-group bindchange="handelAllChoose">
-            <checkbox checked="{{isAllChoose}}">全选</checkbox>
-        </checkbox-group>
+        </block>
+        <block wx:else>
+            <view class="dsc-text">
+                <view>
+                    <i class="iconfont icon-shopshoppingco"></i>
+                </view>
+                <view class="text">您的购物车还没有任何商品快去逛一逛吧</view>
+            </view>
+           <!-- <image mode="widthFix"
+                src="https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=3459299675,4037737073&fm=26&gp=0.jpg" />
+                -->
+        </block>
     </view>
-    <view class="total_yunfei">
-        <view class="totolprice">
-            <text class="text_price">合计:</text>
-            <text class="price">￥{{totalPrice}}</text>
+    <view class="bottom_tools">
+        <view class="allchoose">
+            <checkbox-group bindchange="handelAllChoose">
+                <checkbox checked="{{isAllChoose}}">全选</checkbox>
+            </checkbox-group>
         </view>
-        <view class="yunfei">包含运费</view>
+        <view class="total_yunfei">
+            <view class="totolprice">
+                <text class="text_price">合计:</text>
+                <text class="price">￥{{totalPrice}}</text>
+            </view>
+            <view class="yunfei">包含运费</view>
+        </view>
+        <view class="pay" bindtap="payAll">结算({{totalNum}})</view>
     </view>
-    <view class="pay" bindtap = "payAll">结算({{totalNum}})</view>
-</view>
 </block>
 <block wx:else>
-    <navigator url="/pages/login/index" class="loginto">
+    <view class="dsc-text">
+        <view>
+            <i class="iconfont icon-shopshoppingco"></i>
+        </view>
+        <view class="text">您的购物车还没有任何商品，快去逛一逛吧</view>
+    </view>
+
+   <!-- <navigator url="/pages/login/index" class="loginto">
         登录
     </navigator>
+    -->
 </block>

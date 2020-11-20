@@ -49,7 +49,6 @@ Page({
     }
       //wx.setStorageSync('collect', [])
     },
-
   //收藏页面的跳转
   tiaozhuan() {
     const userinfo = wx.getStorageSync('userinfo');
@@ -62,9 +61,54 @@ Page({
       wx.navigateTo({
         url: "/pages/collect/index"
       })
+
     }
   },
 
+  //添加地址
+  addAddress(){
+    const userinfo = wx.getStorageSync('userinfo');
+    var arr = Object.keys(userinfo);
+    if (arr.length === 0) {
+      wx.navigateTo({
+        url: "/pages/login/index"
+      })
+    } else {
+      wx.navigateTo({
+        url: "/pages/address/address"
+      })
+    }
+  },
+
+  //意见反馈
+  feedback(){
+    const userinfo = wx.getStorageSync('userinfo');
+    var arr = Object.keys(userinfo);
+    if (arr.length === 0) {
+      wx.navigateTo({
+        url: "/pages/login/index"
+      })
+    } else {
+      wx.reLaunch({
+        url: "/pages/feedback/index"
+      })
+    }
+  },
+
+  //关于我们
+  aboutUs(){
+    const userinfo = wx.getStorageSync('userinfo');
+    var arr = Object.keys(userinfo);
+    if (arr.length === 0) {
+      wx.navigateTo({
+        url: "/pages/login/index"
+      })
+    } else {
+      wx.reLaunch({
+        url: "/pages/about/index"
+      })
+    }
+  },
   //判断用户是否已经登录
   loginuser() {
     const userinfo = wx.getStorageSync('userinfo');

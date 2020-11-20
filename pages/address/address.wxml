@@ -1,0 +1,9 @@
+<view class="address-dsc">
+
+    <view><i class="iconfont icon-dizhi"></i></view>
+    <view class="address_text">暂无可用收货地址</view>
+
+</view>
+<view class="address_bottom">
+    <button class="add_address" bindtap="handleChooseAddress">添加新地址</button>
+</view>

@@ -1,3 +1,11 @@
 <view class="login_botton">
-<button type="primary" plain="{{true}}" open-type="getUserInfo" bindgetuserinfo="bindGetUserInfo">登录</button>
+    <view class="icon">
+        <i class="iconfont icon-guanbi"></i>
+    </view>
+    <view class="login-text">您还没有登录哦</view>
+
+</view>
+
+<view class="btn">
+    <button class="btn-login" open-type="getUserInfo" bindgetuserinfo="bindGetUserInfo">登录</button>
 </view>

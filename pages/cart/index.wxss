@@ -6,11 +6,17 @@ page {
 }
 .revice_address_row .address_btn button {
   width: 60%;
+  font-size: 36rpx;
+  border-radius: 15rpx;
+  border-color: var(--themeColor);
+  background-color: var(--themeColor);
+  color: white;
 }
 .revice_address_row .user_info_row {
   font-size: 30rpx;
   display: flex;
   padding: 20rpx;
+  color: #666;
 }
 .revice_address_row .user_info_row .user_info {
   flex: 5;
@@ -36,6 +42,11 @@ page {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.cart_content .cart_list .cart_item .cart_chk_wrap checkbox-group checkbox .wx-checkbox-input {
+  width: 38rpx;
+  height: 38rpx;
+  border-radius: 50%;
 }
 .cart_content .cart_list .cart_item .imgwrap {
   flex: 2;
@@ -77,11 +88,16 @@ page {
   display: flex;
   justify-content: center;
   align-items: center;
+  font-size: 34rpx;
   width: 40rpx;
   height: 40rpx;
-  border: 1rpx solid black;
+  line-height: 40rpx;
+  border-radius: 50%;
+  border: 1rpx solid #666;
+  color: #666;
 }
 .cart_content .cart_list .cart_item .content_info .price_num .num_wrap .num {
+  color: #666;
   margin: 0 20rpx;
 }
 .cart_content .cart_list .cart_item .content_info .price_num .num_wrap .add {
@@ -107,7 +123,14 @@ page {
   flex: 1;
 }
 .bottom_tools .allchoose checkbox-group checkbox {
-  font-size: 32rpx;
+  /*.wx-checkbox-input.wx-checkbox-input-checked {
+                    background-color: ;
+                }*/
+}
+.bottom_tools .allchoose checkbox-group checkbox .wx-checkbox-input {
+  width: 38rpx;
+  height: 38rpx;
+  border-radius: 50%;
 }
 .bottom_tools .total_yunfei {
   padding-right: 30rpx;
@@ -122,7 +145,7 @@ page {
 }
 .bottom_tools .total_yunfei .yunfei {
   font-size: 26rpx;
-  color: #ccc;
+  color: #666;
 }
 .bottom_tools .pay {
   height: 100%;
@@ -145,4 +168,19 @@ page {
   color: #75c275;
   font-weight: 600;
   font-size: 34rpx;
+}
+.dsc-text {
+  color: #666;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 300rpx;
+}
+.dsc-text .icon-shopshoppingco {
+  font-size: 100rpx;
+}
+.dsc-text .text {
+  font-size: 30rpx;
+  margin-top: 20rpx;
 }
